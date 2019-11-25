@@ -23,7 +23,7 @@ modules:
         group: SERVICE_REPLACEMENTS
         properties:
           key: ServiceName_1
-          service: '~{products-service-name}'
+          service: '~{the-service-name}'
   - name: core_xsjs
     type: nodejs
     path: core_xsjs
@@ -55,4 +55,4 @@ resources:
   - name: CROSS_SCHEMA_PRODUCTS
     type: org.cloudfoundry.existing-service
     properties:
-      products-service-name: '${service-name}'
+      the-service-name: '${service-name}'
